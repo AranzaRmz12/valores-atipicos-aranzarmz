@@ -85,5 +85,3 @@ plt.title('Histograma de ventas_precios_constantes sin outliers con desviación 
 plt.xlabel('ventas_precios_constantes')
 plt.ylabel('Frecuencia')
 plt.show()
-
-# ELEGIR 3 COLUMNAS, Y APLICARLES AMBOS MÉTODOS, GUARDAR UN CSV DE CADA COLUMNA QUE SE PROCESO (6 EN TOTAL)
