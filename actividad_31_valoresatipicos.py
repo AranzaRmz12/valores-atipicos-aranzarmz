@@ -225,7 +225,7 @@ Limite_Inferior_iqr_3 = percentile25_3 - 1.5 * iqr_3
 #print("Limite inferior permitido usando Cuartiles: ", Limite_Inferior_iqr_3)
 
 # Obtenemos datos limpios
-data_clean_iqr_3 = df[(y3 <= Limite_Superior_iqr_2) & (y3 >= Limite_Inferior_iqr_2)]
+data_clean_iqr_3 = df[(y3 <= Limite_Superior_iqr_3) & (y3 >= Limite_Inferior_iqr_3)]
 #print(data_clean_iqr_3)
 
 # HISTOGRAMA Y DIAGRAMA DE CAJA SIN OUTLIERS
@@ -274,6 +274,6 @@ plt.ylabel('Frecuencia')
 fig = plt.figure(figsize = (5, 3))
 plt.boxplot(data_clean_std_3["panaderia"]) 
 plt.title("Boxplot de panaderia sin outliers con desviación estándar")
-#plt.show()
+plt.show()
 
 data_clean_std_3["panaderia"].to_csv('panaderia_std.csv')
